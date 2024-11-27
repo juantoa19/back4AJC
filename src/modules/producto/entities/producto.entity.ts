@@ -10,16 +10,16 @@ export class Producto {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({type:'varchar', length:250})
     nombre:string;
 
-    @Column()
+    @Column({type:'decimal',precision:10,scale:2})
     precio:number;
 
-    @Column()
+    @Column({type:'int'})
     stock:number;
 
-    @Column()
+    @Column({type:'varchar', length:250, nullable:true})
     image:string;
 
     @Column()
