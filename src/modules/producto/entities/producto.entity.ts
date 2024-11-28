@@ -22,10 +22,10 @@ export class Producto {
     @Column({type:'varchar', length:250, nullable:true})
     image:string;
 
-    @Column()
+    @Column({type:'text',nullable:true})
     descripción:string;
 
-    @Column()
+    @Column({type:'boolean', default:true})
     estado:boolean;
 
     @ManyToOne(()=>Categoria, (cat)=>cat.producto)

@@ -17,7 +17,7 @@ export class CategoriaController {
   }
 
   @Get()
-  @UseGuards(JwtAuthGuard)
+ // @UseGuards(JwtAuthGuard)
   findAll() {
     return this.categoriaService.findAll();
   }
